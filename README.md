@@ -14,4 +14,5 @@ A productivity website integrated with Canvas that imports assignments and calen
 1. Canvas Integration
 2. The Actual Website
 3. Points System
-4. Ducks!
+4. Study Zone
+5. Ducks!
