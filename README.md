@@ -1,4 +1,4 @@
-# HackTAMS - *PROJECT NAME*
+# HackTAMS - ProDucktive
 ## Buzz Words
 * Productivity
 * Gamified
