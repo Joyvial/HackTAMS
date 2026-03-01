@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>ProDucktive</title>
+        <link rel="stylesheet" href="homepage.css">
+    </head>
+    <body>
+
+    <div class="column left">
+        <h1>Classes</h1>
+        <div id="classesList"></div>
+        <div class="jsonTest">
+        </div>
+    </div>
+    <div class="column middle">
+        <h1>To Do</h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'School')">School</button>
+            <button class="tablinks" onclick="openTab(event, 'Personal')">Personal</button>
+        </div>
+
+        <div id="School" class="tabcontent">
+        <table id="schoolTable">
+            <tr>
+                <th><p>Class</p></th>
+                <th><p>Assignment</p></th>
+                <th><p>Priority</p></th>
+                <th><p>Due</p></th>
+                <th><p>Done?</p></th>
+            </tr>
+        </table>
+        <button class="addmore" onclick="addAssignmentRow()">Add item?</button>
+        </div>
+
+        <div id="Personal" class="tabcontent">
+        <table class="todoTable">
+            <tr>
+                <th>Item</th>
+                <th>Priority</th>
+                <th>Complete By</th>
+                <th>Done?</th>
+            </tr>
+            <tr>
+                <td>Clean Room</td>
+                <td>!!!</td>
+                <td>March-1-2026</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Email Professor Doe</td>
+                <td>!</td>
+                <td>March-10-2026</td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table>
+        <button class="addmore">Add item?</button>
+        </div>
+        <br>
+        <a href="studyzone.html" class="button">Study Zone</a>
+    </div>
+
+    <div class="column right">
+        <div class="points">
+            <h1>5,025</h1>
+            <img src="Images/Coin_Symbol.png" width="50" height="50" alt="Coin">
+        </div>
+        
+        <div class="classmates">
+            <h2>Classmates</h2>
+            <hr>
+            <ul>
+                <li>Jessica Dalton</li>
+                <li>Jack Brown</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="ducks">
+    <img src="Images/Pirate_Duck.png" class="ducks">
+    <img src="Images/Default_Duck.png" class="ducks">
+    <img src="Images/Dignified_Duck.png" class="ducks">
+    <img src="Images/Peach_Duck.png" class="ducks">
+    <img src="Images/Weeb_Duck.png" class="ducks">
+    </div>
+
+    <a href="shop.html" class="shop">
+        <img src="Images/Shop.png" alt="Shop">
+    </a>
+    <img src="Images/Hill.png" class="house"/>
+    <img src="Images/Foreground_Grass.png" class="foreground"/>
+<script src="homepage.js"></script>
+</body>
+</html>
