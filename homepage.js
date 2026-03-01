@@ -16,21 +16,22 @@ function openTab(evt, pageName)
 
   const ducks = document.querySelectorAll(".ducks");
   const shop = document.querySelector(".shop");
-  const hill = document.querySelector(".hill");
+  const clouds = document.querySelector(".clouds");
   const foreground = document.querySelector(".foreground");
 
 if (pageName === "School" || pageName === "Personal") 
+if (cityName === "Blank") 
 {
     ducks.forEach(duck => duck.style.display = "block");
     if (shop) shop.style.display = "block";
-    if (hill) hill.style.display = "block";
+    if (clouds) clouds.style.display = "block";
     if (foreground) foreground.style.display = "block";
 } 
 else 
 {
     ducks.forEach(duck => duck.style.display = "none");
     if (shop) shop.style.display = "none";
-    if (hill) hill.style.display = "none";
+    if (clouds) hill.style.display = "none";
     if (foreground) foreground.style.display = "none";
 }
 }
@@ -68,7 +69,7 @@ async function getInfo() {
     row.dataset.type = 'local';
     row.dataset.localIdx = idx;
     row.innerHTML = `
-      <td><p>${a.className}</p></td>
+      <td></td>
       <td><p>${a.assignmentName}</p></td>
       <td><p>${a.dueDate}</p></td>
       <td><input type="checkbox" class="deleteCheckbox"></td>
