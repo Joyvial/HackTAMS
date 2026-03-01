@@ -30,7 +30,7 @@ else
 {
     ducks.forEach(duck => duck.style.display = "none");
     if (shop) shop.style.display = "none";
-    if (clouds) hill.style.display = "none";
+    if (clouds) clouds.style.display = "none";
     if (foreground) foreground.style.display = "none";
 }
 }
