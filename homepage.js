@@ -31,6 +31,12 @@ if (pageName === "School" || pageName === "Personal")
     if (clouds) clouds.style.display = "none";
     if (foreground) foreground.style.display = "none";
 }
+
+if (pageName === "School" || pageName === "Personal" || pageName === "Home") {
+    if (shop) shop.style.display = "block";
+} else {
+    if (shop) shop.style.display = "none";
+}
 }
 
 async function checkServer() {
