@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Shop</title>
+  <style>
+    @font-face 
+    {
+    font-family: 'thejAnk';
+    src: URL('Myfont-Regular.ttf') format('truetype');
+    }
+
+    html, body
+    {
+        font: inherit;
+        font-family: thejAnk;
+        text-align: center;
+    }
+
+    h1
+    {
+        font-size: 50pt;
+        color: white;
+        font-weight:bolder;
+        margin-top: -5px;
+    }
+
+    .egg
+    {
+        width: 20%;
+    }
+
+    .buy
+    {
+        margin-top: 20px;
+        height: 30px;
+    }
+
+    * {
+    box-sizing: border-box;
+    }
+
+    ul {
+    margin-top: 100px;
+    width: 100vw;
+    height: 400px;
+    padding: 20px;
+    display: flex;
+    gap: 4vw;
+    }
+    li {
+    list-style-type: none;
+    padding: 20px;
+
+    flex: 0 0 100%;
+    }
+
+    ul {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
+        }
+
+    ul::-webkit-scrollbar {
+    display: none;
+    }
+
+    li {
+    scroll-snap-align: center;
+    }
+
+    .back-btn {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+        padding: 8px 14px;
+        cursor: pointer;
+    }
+
+    .points {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 1000;
+    }
+
+    h2
+    {
+        color: white;
+        margin-top: 30px;
+    }
+
+  </style>
+<body>
+    <h1>SHOP</h1>
+    <a href="index.html">
+        <button class="back-btn">Back</button>
+    </a>
+    <div class="points">
+            <h2>5,025</h2>
+            <img src="Images/Coin_Symbol.png" width="50" height="50" alt="Coin">
+    </div>
+    <ul>
+    <li data-accName="Item 1">
+        <img src="Images/Default_Duck.png" class="egg"/>
+        <br>
+        <h2>Basic Egg</h2>
+    </li>
+    <li data-accName="Item 2">
+        <img src="Images/Default_Duck.png" class="egg"/>
+        <br>
+        <h2>Mitochondriegg</h2>
+    </li>
+    <li data-accName="Item 3">
+        <img src="Images/Default_Duck.png" class="egg"/>
+        <br>
+        <h2>Egg of Wrath</h2>
+    </li>
+    </ul>
+    <br>
+    <button class="buy">Buy Egg</button>
+</body>
