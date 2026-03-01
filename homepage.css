@@ -12,7 +12,7 @@ html, body
   padding: 0;
   background-color: #B4D9EF;
   font: inherit;
-  font-family: thejAnk
+  font-family: thejAnk;
 }
 
 * 
@@ -34,7 +34,7 @@ html, body
     background-color: #f0edda;
     width: 25%;
     text-align: center;
-    border-right: 3px solid #f0edda;
+    border-right: 3px solid #b5a6a0;
 }
 
 /* ---------| Middle Segment |--------- */
@@ -49,22 +49,28 @@ html, body
 .tab 
 {
   overflow: hidden;
-  border: 1px solid black;
+  border: none;
   border-bottom: none;
-  background-color: #f0edda;
+  background-color: #b4d9ef;
   width: fit-content;
+  border-radius: 15px;
+  font: inherit;
+  font-family: thejAnk;
 }
 
 .tab button 
 {
   background-color: #FCFF6C;
   float: left;
-  border: none;
+  border-radius: 15px;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
+  overflow: hidden;
+  font: inherit;
+  font-family: thejAnk;
 }
 
 .tab button:hover 
@@ -85,13 +91,26 @@ html, body
   background: #f0edda;
   overflow-y: scroll; 
   height:400px;
+  border-radius: 10px;
 }
 
-table, th,td
+.table-wrapper {
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow-y: scroll; 
+}
+
+table
 {
     width:690px;
-    border: 1px solid black;
     border-collapse: collapse;
+    overflow-y: scroll; 
+}
+
+th,td
+{
+  border: 1px solid black;
+  padding: 10px;
 }
 
 p
@@ -101,7 +120,8 @@ p
 
 .button 
 {
-  background-color: #FCFF6C;
+  overflow: hidden;
+  background-color: #FCFF6c;
   border: 1px solid;
   color: black;
   padding: 15px 32px;
@@ -127,15 +147,20 @@ p
     text-align: right;
     width: 20%;
     margin-top: 80px;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .classmates
 {
+    border: 1px solid #b5a6a0;
     margin-top: 10px;
     background-color: #f0edda;
-    border: 3px solid #f0edda;
+    border-radius: 15px;
     padding: 14px 16px;
+    overflow: hidden;
 }
+
 .classmates h2
 {
     text-align: center;
@@ -191,8 +216,8 @@ p
   position: fixed;
   background: none;
   border: none;
-  right: -5.5rem;
-  bottom: 1.5rem;
+  right: -11rem;
+  bottom: 15rem;
   width: 30%;
   height: auto;
   z-index: 7;
