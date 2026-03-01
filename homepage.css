@@ -90,8 +90,12 @@ html, body
 table, th,td
 {
     width:690px;
-    border: 1px solid black;
-    border-collapse: collapse;
+    border-top-left-radius: 10px solid black;
+    border-bottom-left-radius: 10px solid black;
+    border-top-right-radius: 10px solid black;
+    border-bottom-right-radius: 10px solid black;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 
 p
