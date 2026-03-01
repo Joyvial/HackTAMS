@@ -1,41 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head>
+<html class="focus-outline-visible"><head>
   <title>Frontend Test</title>
 </head>
 <body>
 
+<button id="checkBtn">Check Server</button>
+
 <script>
-async function checkServer() {
-    try {
-        const response = await fetch(
-            "https://producktionserver.sylvanbuckwilliams.com/api/dueThisMonth",
-            {
-                method: "GET",
-                headers: {
-                    "Accept": "application/json"
-                }
+document.addEventListener("DOMContentLoaded", function () {
+
+    async function checkServer() {
+        console.log("Button clicked");  // 🔍 Debug line
+
+        try {
+            const response = await fetch(
+                "https://producktionserver.sylvanbuckwilliams.com/api/dueThisMonth"
+            );
+
+            console.log("Raw response:", response);  // 🔍 Debug
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
             }
-        );
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
+            const data = await response.json();
+
+            console.log("Server is online");
+            console.log("Response:", data);
+
+        } catch (error) {
+            console.error("Server check failed:", error);
         }
-
-        const data = await response.json();
-
-        console.log("Server is online");
-        console.log("Response:", data);
-
-        return data;
-
-    } catch (error) {
-        console.error("Server check failed:", error);
-        return null;
     }
-}
-</script>
-<button onclick="checkServer()">Check Server</button>
 
-</body>
-</html>
+    document.getElementById("checkBtn")
+        .addEventListener("click", checkServer);
+
+});
+</script>
+
+
+
+
+</body></html>
